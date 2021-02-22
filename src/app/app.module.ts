@@ -11,6 +11,8 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { EducationComponent } from './components/education/education.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
+import { FormsModule } from '@angular/forms';
+import { InputBuscarComponent } from './components/shared/input-buscar/input-buscar.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { ContactsComponent } from './components/contacts/contacts.component';
     AboutMeComponent,
     EducationComponent,
     PortfolioComponent,
-    ContactsComponent
+    ContactsComponent,
+    InputBuscarComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     APP_ROUTING
   ],
   providers: [],

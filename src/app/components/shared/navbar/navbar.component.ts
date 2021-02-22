@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+// import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { PortfolioService } from '../../../services/portfolio.service';
+
 
 @Component({
   selector: 'app-navbar',
@@ -8,18 +11,22 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+
+  @Output() onEnter: EventEmitter<string> = new EventEmitter();
+
   constructor(
-    private router: Router
+    private router: Router,
+    private portFolioSetvice: PortfolioService
   ) { }
 
   ngOnInit(): void {
   }
-
-
-  buscarHeroe(termino: string) {
-    console.log(termino);
-    this.router.navigate(['/buscar', termino]);
-
+ 
+  buscar($event) {
+    // console.log(  $event);
+    this.onEnter.emit($event);
+    // this.onEnter.emit($event);
   }
+
 
 }

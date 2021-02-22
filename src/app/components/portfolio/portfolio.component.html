@@ -1,8 +1,9 @@
+<app-navbar (onEnter)="buscar($event)"></app-navbar>
 
 <div class="card-columns animated fadeIn">
 
-    <div *ngFor="let portfolio of portfolios" class="card mt-4" >
-        <img  src="{{portfolio.img}}" class="card-img-top" alt="{{portfolio.titulo}}">
+    <div *ngFor="let portfolio of portfolios" class="card mt-4">
+        <img src="{{portfolio.img}}" class="card-img-top" alt="{{portfolio.titulo}}">
         <div class="card-body">
             <h5 class="card-title"> {{portfolio.titulo}} </h5>
             <p class="card-text"> {{portfolio.descripcion}} </p>
@@ -10,19 +11,3 @@
         </div>
     </div>
 </div>
-<!-- 
-<div class="container row"> 
-
-<div *ngFor="let portfolio of portfolios" class="card animated fadeIn fast col-4 mt-5" >
-    <img src="{{portfolio.img}}" class="card-img-top" alt="{{portfolio.titulo}}">
-    <div class="card-body">
-        <h5 class="card-title">{{portfolio.titulo}}</h5>
-        <p class="card-text">{{portfolio.descripcion}}</p>
-        <a href="{{portfolio.ruta}}" target="_blanck" class="btn btn-outline-primary btn-block" >Go somewhere</a>
-
-
-
-    </div>
-</div>
-
-</div> -->

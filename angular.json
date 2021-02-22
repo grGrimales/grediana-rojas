@@ -125,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "personal-page-app"
+  "defaultProject": "personal-page-app",
+  "cli": {
+    "analytics": "03f3126e-d56e-4936-81f0-ba0b885aef78"
+  }
 }

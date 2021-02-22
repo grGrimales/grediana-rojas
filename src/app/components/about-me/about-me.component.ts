@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AboutMe } from '../../interfaces/about.me.interface';
+import { PortfolioService } from '../../services/portfolio.service';
 
 @Component({
   selector: 'app-about-me',
@@ -7,19 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
+
+ aboutMe: AboutMe;
   progreso: string;
-  constructor() { 
-
-
-
-
-
-
-
+  constructor(private portfolioService: PortfolioService) { 
+    
+    this.aboutMe = this.portfolioService.getAboutMe();
     
   }
 
+
   ngOnInit(): void {
+
+
+
 
     for (let i = 0; i < 101; i++) {
 
@@ -37,7 +40,9 @@ export class AboutMeComponent implements OnInit {
 
 
 
-
+buscar(termino) {
+  
+}
 
 
 }
