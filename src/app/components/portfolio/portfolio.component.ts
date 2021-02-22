@@ -10,6 +10,7 @@ import { Portfolio } from '../../interfaces/portfolio.interface';
 export class PortfolioComponent implements OnInit {
 
   portfolios: Portfolio[];
+  thereAreProjects: boolean = true;
 
   constructor(
     private _portfolioService: PortfolioService
@@ -23,11 +24,18 @@ export class PortfolioComponent implements OnInit {
 
   buscar($event) {
 
-    if($event === '' || $event === undefined) {
+    if ($event === '' || $event === undefined) {
       this.portfolios = this._portfolioService.getPortfolio();
       return;
     }
-   this.portfolios =  this._portfolioService.getPortFolioByTerm($event);
+    this.portfolios = this._portfolioService.getPortFolioByTerm($event);
+
+    if (this.portfolios.length === 0) {
+
+      this.thereAreProjects = false;
+    } else {
+      this.thereAreProjects = true;
+    }
 
   }
 }
