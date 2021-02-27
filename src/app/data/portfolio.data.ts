@@ -65,5 +65,23 @@ export const portfolioData: Portfolio[] = [
     ruta: 'https://grgrimales.github.io/maquetacion-web-2/',
     labels: [ 'html', 'css', 'bootstrap', 'maquetación']
 
+  },
+  {
+    id: 8,
+    titulo: 'GifsApp',
+    descripcion: 'Aplicación para buscar imágenes conectandonos a la Api de Giphy, creada en Angular',
+    img: 'assets/images/gifsApp.png',
+    ruta: 'https://grgrimales.github.io/Gifs-App/',
+    labels: [ 'angular', 'css', 'api']
+
+  },
+  {
+    id: 9,
+    titulo: 'PaisesApp',
+    descripcion: 'Aplicación para buscar países por capital o región, creada en Angular y utiliza la api de REST COUNTRIES',
+    img: 'assets/images/paisesApp.jpeg',
+    ruta: 'https://grgrimales.github.io/paisesApp/',
+    labels: [ 'angular', 'css', 'api']
+
   }
 ]
