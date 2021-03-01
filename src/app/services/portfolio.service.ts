@@ -3,6 +3,7 @@ import { Portfolio } from '../interfaces/portfolio.interface';
 import { portfolioData } from '../data/portfolio.data';
 import { AboutMe } from '../interfaces/about.me.interface';
 import { aboutMeData } from '../data/aboutMe.data';
+import { Contact } from '../interfaces/contact.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -39,6 +40,10 @@ export class PortfolioService {
 
   onlyUnique(value, index, self) {
     return self.indexOf(value) === index;
+  }
+
+  enviarMensaje(contact: Contact) {
+    console.table(contact);
   }
 
 

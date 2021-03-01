@@ -1,14 +1,15 @@
 import { Portfolio } from '../interfaces/portfolio.interface';
 
 export const portfolioData: Portfolio[] = [
-   {
-    id: 4,
-    titulo: 'Clon de facebook con bootstrap',
-    descripcion: 'Clon de red social facebook realizada con bootstrap',
-    img: 'assets/images/clon-facebook-min.jpeg',
-    ruta: 'https://grgrimales.github.io/maquetacion-red-social/',
-    labels: ['html', 'css', 'bootstrap','facebook', 'clon'],
 
+
+  {
+    id: 8,
+    titulo: 'GifsApp',
+    descripcion: 'Aplicación para buscar imágenes conectandonos a la Api de Giphy, creada en Angular',
+    img: 'assets/images/gifsApp.png',
+    ruta: 'https://grgrimales.github.io/Gifs-App/',
+    labels: [ 'angular', 'css', 'api']
 
   },
   {
@@ -29,16 +30,17 @@ export const portfolioData: Portfolio[] = [
     labels: ['heroes', 'angular', 'javascript', 'html', 'css', 'bootstrap', 'heroes']
 
   },
+
   {
-    id: 3,
-    titulo: 'Portafolio con bootstrap',
-    descripcion: 'Componentes para la construcción de un portafolio hecho con bootstrap.',
-    img: 'assets/images/portafolio-min.jpeg',
-    ruta: 'https://grgrimales.github.io/Portafolio/',
-    labels: [ 'javascript', 'html', 'css', 'bootstrap', 'portafolio']
+    id: 9,
+    titulo: 'PaisesApp',
+    descripcion: 'Aplicación para buscar países por capital o región, creada en Angular y utiliza la api de REST COUNTRIES',
+    img: 'assets/images/paisesApp.jpeg',
+    ruta: 'https://grgrimales.github.io/paisesApp/',
+    labels: [ 'angular', 'css', 'api']
 
   },
-  
+
   {
     id: 1,
     titulo: 'Lista de tareas',
@@ -67,21 +69,23 @@ export const portfolioData: Portfolio[] = [
 
   },
   {
-    id: 8,
-    titulo: 'GifsApp',
-    descripcion: 'Aplicación para buscar imágenes conectandonos a la Api de Giphy, creada en Angular',
-    img: 'assets/images/gifsApp.png',
-    ruta: 'https://grgrimales.github.io/Gifs-App/',
-    labels: [ 'angular', 'css', 'api']
+    id: 4,
+    titulo: 'Clon de facebook con bootstrap',
+    descripcion: 'Clon de red social facebook realizada con bootstrap',
+    img: 'assets/images/clon-facebook-min.jpeg',
+    ruta: 'https://grgrimales.github.io/maquetacion-red-social/',
+    labels: ['html', 'css', 'bootstrap','facebook', 'clon'],
+
 
   },
   {
-    id: 9,
-    titulo: 'PaisesApp',
-    descripcion: 'Aplicación para buscar países por capital o región, creada en Angular y utiliza la api de REST COUNTRIES',
-    img: 'assets/images/paisesApp.jpeg',
-    ruta: 'https://grgrimales.github.io/paisesApp/',
-    labels: [ 'angular', 'css', 'api']
+    id: 3,
+    titulo: 'Portafolio con bootstrap',
+    descripcion: 'Componentes para la construcción de un portafolio hecho con bootstrap.',
+    img: 'assets/images/portafolio-min.jpeg',
+    ruta: 'https://grgrimales.github.io/Portafolio/',
+    labels: [ 'javascript', 'html', 'css', 'bootstrap', 'portafolio']
 
   }
+
 ]

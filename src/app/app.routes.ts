@@ -8,7 +8,6 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 const ROUTES: Routes = [
 
     { path: '', pathMatch: 'full', redirectTo: 'aboutMe' },
-    { path: 'formation', component: EducationComponent },
     { path: 'portfolio', component: PortfolioComponent },
     { path: 'aboutMe', component: AboutMeComponent },
     { path: 'contacts', component: ContactsComponent }

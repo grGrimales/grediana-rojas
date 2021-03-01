@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Contact } from '../../interfaces/contact.interface';
+import { PortfolioService } from '../../services/portfolio.service';
 
 @Component({
   selector: 'app-contacts',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsComponent implements OnInit {
 
-  constructor() { }
+
+  contact: Contact = {
+    name: "",
+    email: "",
+    phone: "",
+    message:  ""
+
+  };
+
+  constructor(
+    private portfolioService: PortfolioService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  enviarMensaje() {
+    console.table(this.contact);
+    this.portfolioService.enviarMensaje(this.contact);
   }
 
 }
