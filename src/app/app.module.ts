@@ -13,6 +13,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { FormsModule } from '@angular/forms';
 import { InputBuscarComponent } from './components/shared/input-buscar/input-buscar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { InputBuscarComponent } from './components/shared/input-buscar/input-bus
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     APP_ROUTING
   ],
   providers: [],
